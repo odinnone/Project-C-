@@ -26,7 +26,7 @@ int[] ArrayOfNumbers(string seriesNew) {
       i++;
     }
     arrayOfNumbers[j] = Convert.ToInt32(seriesNew1);    
-    if (i < seriesNew.Length-1){
+    if (i < seriesNew.Length-1) {
       arrayOfNumbers = arrayOfNumbers.Concat(new int[] {0}).ToArray();    
     }
     j++;

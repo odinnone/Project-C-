@@ -3,4 +3,4 @@
 Console.WriteLine("Введите целое число");
 int n = Convert.ToInt32(Console.ReadLine());
 if (n >= 1) for (int i = 1; i <= n; i++) Console.Write($"{i*i*i} ");
-else Console.WriteLine("Ввели не пятизначное число");
+else Console.WriteLine("Ввели некорректное число");

@@ -1,14 +1,14 @@
 ﻿// Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
 
-int deep1 = InputInt("Введите размерность 1: ");
-int deep2 = InputInt("Введите размерность 2: ");
-int deep3 = InputInt("Введите размерность 3: ");
+int mas1 = InputInt("Введите размерность 1: ");
+int mas2 = InputInt("Введите размерность 2: ");
+int mas3 = InputInt("Введите размерность 3: ");
 int countNums = 89;
-if (deep1 * deep2 * deep3 > countNums) {
+if (mas1 * mas2 * mas3 > countNums) {
     Console.Write("Массив слишком большой");
     return;
 }
-int[,,] resultNums = Create3DMassive(deep1, deep2, deep3);
+int[,,] resultNums = Create3DMassive(mas1, mas2, mas3);
 for (int i = 0; i < resultNums.GetLength(0); i++) {
     for (int j = 0; j < resultNums.GetLength(1); j++) {
         for (int k = 0; k < resultNums.GetLength(2); k++) Console.WriteLine($"[{i},{j},{k}] - {resultNums[i, j, k]}");
